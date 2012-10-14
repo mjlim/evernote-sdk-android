@@ -1,5 +1,7 @@
-Evernote SDK for Android version 1.21
+Evernote SDK for Android version 0.2.3
 =============================================
+
+Evernote API version 1.22
 
 Overview
 --------
@@ -12,6 +14,10 @@ Prerequisites
 In order to use the code in this SDK, you need to obtain an API key from http://dev.evernote.com/documentation/cloud. You'll also find full API documentation on that page.
 
 In order to run the sample code, you need a user account on the sandbox service where you will do your development. Sign up for an account at https://sandbox.evernote.com/Registration.action 
+
+Known Issues
+------------
+The current version of the SDK performs OAuth network requests on the main thread, resulting in a NetworkOnMainThreadException when the targetSDK is set to 11 or higher.
 
 Getting Started - HelloEDAM
 ---------------------------
